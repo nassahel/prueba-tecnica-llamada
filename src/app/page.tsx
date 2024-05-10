@@ -35,7 +35,7 @@ export default function Home() {
     <main className="flex min-h-screen bg-zinc-900 text-zinc-200 flex-col items-center justify-center p-4">
       <section className='max-w-[40rem] mb-4 bg-zinc-100 border rounded-md overflow-hidden'>
         <h1 className='bg-zinc-900 font-bold text-center py-2'>Llamada 1</h1>
-        <audio ref={audioRef} controls className='h-10 w-full'>
+        <audio ref={audioRef} controls preload='auto' className='h-10 w-full'>
           <source src="/assets/audio/TestCall.wav" type="audio/wav" />
         </audio>
         <section className='max-w-[40rem] border rounded-md p-2 bg-zinc-800 '>
